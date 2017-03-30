@@ -1,0 +1,23 @@
+h1{
+    color: turquoise; 
+} 
+
+body {
+    background-image: url("http://hdwallsource.com/img/2014/9/digital-backgrounds-30959-31690-hd-wallpapers.jpg");
+    text-align: center;
+    
+} 
+li {  
+    font-family: cursive;
+    
+} 
+#notes {
+    font-family: sans-serif;
+}
+ul{
+    list-style-type: none; 
+}
+div{
+    font-size: larger; 
+}
+    
