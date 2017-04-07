@@ -2,6 +2,18 @@
 
 var games= ["League Of Legends", "Overwatch" , "Vain Glory"];
 
+function add_name( name, isGame ){
+    if ( name.length !== 0 ) {
+        if ( isGame ) {
+            games.push( name );
+        }
+    else {
+        alert('please give a name');
+    }
+}
+}
+
+
 
 $(document).ready(function(){
     
@@ -16,9 +28,10 @@ $("#gameDisplay").html(games[x]);
  
  $("#addGm").click(function(){
      var mvp = $("#popGm").val()
-     games.push( mvp );
-     
+    add_name (mvp ,false);
+     $("#popGm").html(mvp);
      console.log(games);
- });
- 
+     $("input").val(" "); 
+     $("#addGm").html("Add Another One!"); 
+     }); 
 }); 
